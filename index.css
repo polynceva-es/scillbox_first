@@ -1,24 +1,176 @@
+@import url(./fonts/fonts.css);
+html, body {
+    /* height: 100%; */
+}
+
 body {
     --color-light-grey: rgba(241, 241, 241, 1);
     --color-blue: rgba(61, 59, 255, 1);
     --color-white: rgba(255, 255, 255, 1);
     --radius-small: 10px;
     --radius-big: 20px;
+    max-width: 1168px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
-h1, h2, p {
+body, main, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    gap: 60px;
+}
+
+h1, h2, p, button {
     margin: 0;
     padding: 0;
 }
 
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .roboto-regular {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 22px;
+    line-height: 30px;
   }
   
   .roboto-medium {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-style: normal;
+  }
+  .roboto-bold {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .title {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-container p {
+    width: 45%;
+  }
+
+  .form-container {
+    width: 100%;
+    background-color: var(--color-light-grey);
+    border-radius: var(--radius-big);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 37px 50px;
+  }
+
+  .form-container h2 {
+    width: 50%;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 54px;
+}
+
+  .form {
+    align-items: flex-start;
+    gap: 8px;
+    width: 416px;
+  }
+  .form__input {
+    box-sizing: border-box;
+    padding: 11px 24px;
+    border-radius: var(--radius-small);
+    border: none;
+    width: 100%;
+  }
+
+  .form__input::placeholder {
+    color: black;
+  }
+
+  .form__input:focus-visible {
+    outline-color: var(--color-blue);
+  }
+
+  .form__button {
+    box-sizing: border-box;
+    padding: 11px 54px;
+    margin-top: 16px;
+    border-radius: var(--radius-small);
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+
+  footer p {
+    box-sizing: border-box;
+    padding: 50px 20px;
+  }
+
+  @media (max-width: 980px) {
+    .form-container h2 {
+        font-size: 23px;
+        line-height: 27px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .roboto-regular {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+    .title {
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 45px;
+      }
+
+    .form-container, .text-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-container p {
+        width: 80%;
+      }
+
+    .form {
+        width: 270px;
+        align-items: center;
+    }
   }

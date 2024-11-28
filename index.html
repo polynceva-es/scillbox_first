@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        <meta name="description" content="ScillBox Landing">
-        <meta name="author" content="Ekaterina Polyntseva">
-        <!-- <link rel="icon" type="image/svg+xml" href="./favicon.ico"> -->
-        <link rel="stylesheet" href="./index.css">
+    <meta name="description" content="ScillBox Landing">
+    <meta name="author" content="Ekaterina Polyntseva">
+    <!-- <link rel="icon" type="image/svg+xml" href="./favicon.ico"> -->
+    <link rel="stylesheet" href="./index.css">
     <title>ScillBox Landing</title>
 </head>
+
 <body>
     <header></header>
     <main>
-        <h1>Тур в Абхазию от агентства «Телепорт»</h1>
-        <img src="" alt="">
-        <p>Вас ждёт незабываемая экскурсия на озеро Рица, Юпшарский каньон и водопад Мужские слёзы. Бесплатные дегустации вина, чая и мёда сделают отдых ещё приятнее. </p>
-        <p>А самые смелые туристы смогут отправиться на сплав по горной реке и полетать на параплане.</p>
-        <form>
-            <h2>
-                Оставьте заявку и забронируйте тур по минимальной цене!
+        <h1 class="roboto-bold title">Тур в&nbsp;Абхазию от&nbsp;агентства &laquo;Телепорт&raquo;</h1>
+        <img src="./img.png" alt="landing image">
+        <section class="text-container">
+        <p class="roboto-regular">Вас ждёт незабываемая экскурсия на&nbsp;озеро Рица, Юпшарский каньон и&nbsp;водопад Мужские слёзы. <span class="roboto-medium">Бесплатные дегустации</span> вина, чая и&nbsp;мёда сделают отдых ещё приятнее.
+        </p>
+        <p class="roboto-regular">А&nbsp;самые смелые туристы смогут <span class="roboto-medium">отправиться на&nbsp;сплав</span> по&nbsp;горной реке и&nbsp;полетать на&nbsp;параплане.</p>
+        </section>
+        <section class="form-container">
+            <h2 class="roboto-bold">
+                Оставьте заявку и&nbsp;забронируйте тур по&nbsp;минимальной цене!
             </h2>
-            <input placeholder="Имя" type="text">
-            <input placeholder="Телефон" type="number">
-            <input placeholder="Email" type="email">
-            <button type="submit">Записаться</button>
-        </form>
+            <form class="form">
+                <input class="form__input" placeholder="Имя" type="text" required>
+                <input class="form__input" placeholder="Телефон" type="tel" required>
+                <input class="form__input" placeholder="Email" type="email" required>
+                <button class="form__button" type="submit">Записаться</button>
+            </form>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>
+            E.Polyntseva 2024
+        </p>
+    </footer>
     <script src="./index.js"></script>
 </body>
+
 </html>
