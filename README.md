@@ -1,1 +1,2 @@
 # scillbox_first
+[макет](https://l.skbx.pro/ncjR3h?utm_term=welcome&utm_medium=email&utm_source=expertsender&utm_content=2024-03-15&utm_campaign=all_all_expertsender_email_event_bootcamp-665_all_code_skillbox)

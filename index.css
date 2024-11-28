@@ -1,0 +1,24 @@
+body {
+    --color-light-grey: rgba(241, 241, 241, 1);
+    --color-blue: rgba(61, 59, 255, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --radius-small: 10px;
+    --radius-big: 20px;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
